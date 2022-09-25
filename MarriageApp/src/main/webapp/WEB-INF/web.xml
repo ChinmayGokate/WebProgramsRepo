@@ -1,0 +1,26 @@
+
+	<web-app>
+		<servlet>
+			<servlet-name>marriage</servlet-name>
+			<servlet-class>com.chinmay.servlet.MarriageApplication</servlet-class>
+		</servlet>
+		
+		<servlet-mapping>
+			<servlet-name>marriage</servlet-name>
+			<url-pattern>/marriageurl</url-pattern>
+		</servlet-mapping>
+		
+		<servlet>
+			<servlet-name>welcome</servlet-name>
+			<servlet-class>com.chinmay.servlet.WelcomeUrl</servlet-class>
+		</servlet>
+		
+		<servlet-mapping>
+			<servlet-name>welcome</servlet-name>
+			<url-pattern>/welcomeurl</url-pattern>
+		</servlet-mapping>
+		<welcome-file-list>
+			<welcome-file>input.html</welcome-file>
+			<welcome-file>welcomeurl</welcome-file>
+		</welcome-file-list>
+	</web-app>
